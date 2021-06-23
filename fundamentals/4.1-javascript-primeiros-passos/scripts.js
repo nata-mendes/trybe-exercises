@@ -98,14 +98,29 @@
 
 // Exercicio 03:
 
-let num1 = 55;
-let num2 = 33;
-let num3 = 25;
+// let num1 = 55;
+// let num2 = 33;
+// let num3 = 25;
 
-if (num1 > num2 && num1 > num3) {
-  console.log(num1);
-} else if (num2 > num1 && num2 > num3) {
-  console.log(num2);
-} else {
-  console.log(num3);
-}
+// if (num1 > num2 && num1 > num3) {
+//   console.log(num1);
+// } else if (num2 > num1 && num2 > num3) {
+//   console.log(num2);
+// } else {
+//   console.log(num3);
+// }
+
+// Exercicio 04:
+
+// let num = -6;
+
+// if (num > 0) {
+//   console.log("Positivo! ;D");
+// } else if (num < 0) {
+//   console.log("Negativo! ;-;");
+// } else {
+//   console.log("Zero! '-'");
+// }
+
+// Exercicio 05:
+
