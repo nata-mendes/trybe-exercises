@@ -1,0 +1,36 @@
+body{
+  font-size: 16px;
+}
+
+h1 {
+  height: 65px;
+  color: orange;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+ul {
+  background-color: gray;
+  font-style: italic;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.contents {
+  background-color: rgb(172, 172, 172);
+}
+
+#li1 {
+  background-color: yellow;
+}
+
+#li2 {
+  background-color: red;
+}
+
+#li3 {
+  background-color: brown;
+}
