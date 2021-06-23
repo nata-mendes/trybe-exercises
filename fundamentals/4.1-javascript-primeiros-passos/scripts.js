@@ -51,21 +51,39 @@
 
 //Parte V do conteudo:
 
-let result = "lista";
+// let result = "lista";
 
-switch (result) {
-  case "aprovada":
-    console.log("Parabéns! Você foi aprovada(o)!");
-    break;
+// switch (result) {
+//   case "aprovada":
+//     console.log("Parabéns! Você foi aprovada(o)!");
+//     break;
 
-  case "lista":
-    console.log("Você está na nossa lista de espera.");
-    break;
+//   case "lista":
+//     console.log("Você está na nossa lista de espera.");
+//     break;
 
-  case "reprovada":
-    console.log("Infelizmente você foi reprovada(o).");
-    break;
+//   case "reprovada":
+//     console.log("Infelizmente você foi reprovada(o).");
+//     break;
 
-  default:
-    console.log("Não se aplica.");
-}
+//   default:
+//     console.log("Não se aplica.");
+// }
+
+// Exercicios do dia:
+
+// Exercicio 01:
+
+// let a = 10;
+// let b = 3;
+
+// let adicao = a + b;
+// let subtracao = a - b;
+// let multiplicacao = a * b;
+// let divisao = a / b;
+// let modulo = a % b;
+
+// console.log(modulo);
+
+// Exercicio 02:
+
