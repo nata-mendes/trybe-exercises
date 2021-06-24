@@ -9,8 +9,14 @@
 
 // exercicio 2 da parte do conteudo:
 
+// let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+// let indexOfPortfolio = menu.indexOf('Portfólio');
+
+// console.log(indexOfPortfolio);
+
+// exercicio 3 da parte do conteudo:
+
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let indexOfPortfolio = menu.indexOf('Portfólio');
+menu.push = 'Contato';
 
-console.log(indexOfPortfolio);
-
+console.log(menu);
