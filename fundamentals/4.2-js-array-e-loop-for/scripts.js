@@ -35,8 +35,28 @@
 
 // exercicio 1 da parte do conteudo:
 
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+// let names = ['João', 'Maria', 'Antônio', 'Margarida'];
 
-for (let name of names) {
-  console.log(name);
+// for (let name of names) {
+//   console.log(name);
+// }
+
+// Exercicios:
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// 1:
+
+// for (let number of numbers) {
+//   console.log(number);
+// }
+
+// 2:
+
+let sum = 0;
+
+for (let number of numbers) {
+  sum += number;
 }
+
+console.log(sum);
