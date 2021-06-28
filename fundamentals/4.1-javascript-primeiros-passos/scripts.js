@@ -205,13 +205,27 @@
 
 // Exercicio 8:
 
-let num1 = 19;
-let num2 = 21;
-let num3 = 23;
+// let num1 = 19;
+// let num2 = 21;
+// let num3 = 23;
+// let result = false;
+
+// if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+//   result = true;
+// }
+
+// console.log(result);
+
+// Exercicio 9:
+
+let num1 = 18;
+let num2 = 20;
+let num3 = 22;
 let result = false;
 
-if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
   result = true;
 }
 
 console.log(result);
+
