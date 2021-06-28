@@ -178,3 +178,22 @@
 // }
 
 // Exercicio 07:
+
+let notaPorcentagem = 75;
+let notaConceito;
+
+if (notaPorcentagem >= 90) {
+  notaConceito = "A";
+} else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
+  notaConceito = "B";
+} else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
+  notaConceito = "C";
+} else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
+  notaConceito = "D";
+} else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
+  notaConceito = "E";
+} else {
+  notaConceito = "F";
+}
+
+console.log(`A nota percentual do aluno foi ${notaPorcentagem}% logo, sua nota conceitual é ${notaConceito}.`);
