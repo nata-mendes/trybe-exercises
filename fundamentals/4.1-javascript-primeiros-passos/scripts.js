@@ -243,12 +243,13 @@
 
 // Exercicio 11:
 
-let salarioBruto = 2612;
+let salarioBruto = -2612;
 let inss = 0;
 let ir = 0;
 
+
+
 if (salarioBruto < 0) {
-  console.log(`Valor de salário bruto digitado (${salarioBruto}) não é válido.`);
 } else {
     if (salarioBruto >= 0 && salarioBruto <= 1556.94) {
     inss = salarioBruto * 0.08;
