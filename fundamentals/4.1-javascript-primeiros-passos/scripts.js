@@ -179,26 +179,39 @@
 
 // Exercicio 07:
 
-let notaPorcentagem = 100;
-let notaConceito;
+// let notaPorcentagem = 100;
+// let notaConceito;
 
-if (notaPorcentagem > 100 || notaPorcentagem < 0) {
-  console.log("O valor informado é invalido.");
-} else {
-  if (notaPorcentagem <= 100 && notaPorcentagem >= 90) {
-    notaConceito = "A";
-  } else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
-    notaConceito = "B";
-  } else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
-    notaConceito = "C";
-  } else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
-    notaConceito = "D";
-  } else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
-    notaConceito = "E";
-  } else {
-    notaConceito = "F";
-  }
+// if (notaPorcentagem > 100 || notaPorcentagem < 0) {
+//   console.log("O valor informado é invalido.");
+// } else {
+//   if (notaPorcentagem <= 100 && notaPorcentagem >= 90) {
+//     notaConceito = "A";
+//   } else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
+//     notaConceito = "B";
+//   } else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
+//     notaConceito = "C";
+//   } else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
+//     notaConceito = "D";
+//   } else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
+//     notaConceito = "E";
+//   } else {
+//     notaConceito = "F";
+//   }
 
-  console.log(`A nota percentual do aluno foi ${notaPorcentagem}% logo, sua nota conceitual é ${notaConceito}.`);
+//   console.log(`A nota percentual do aluno foi ${notaPorcentagem}% logo, sua nota conceitual é ${notaConceito}.`);
 
+// }
+
+// Exercicio 8:
+
+let num1 = 19;
+let num2 = 21;
+let num3 = 23;
+let result = false;
+
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+  result = true;
 }
+
+console.log(result);
