@@ -218,14 +218,25 @@
 
 // Exercicio 9:
 
-let num1 = 18;
-let num2 = 20;
-let num3 = 22;
-let result = false;
+// let num1 = 18;
+// let num2 = 20;
+// let num3 = 22;
+// let result = false;
 
-if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
-  result = true;
-}
+// if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
+//   result = true;
+// }
 
-console.log(result);
+// console.log(result);
 
+// Exercicio 10:
+
+let valorCusto = 23;
+let valorVenda = 30;
+let valorImposto = valorCusto * 0.2;
+let valorCustoTotal = valorCusto + valorImposto;
+let valorLucro = valorVenda - valorCustoTotal;
+
+let quantidadeVendida = 1000;
+
+console.log(`O lucro líquido sobre a venda de ${quantidadeVendida} unidades é de, aproximadamente, R$${Math.round(valorLucro * quantidadeVendida)},00.`);
