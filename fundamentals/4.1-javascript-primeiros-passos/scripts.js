@@ -231,12 +231,32 @@
 
 // Exercicio 10:
 
-let valorCusto = 23;
-let valorVenda = 30;
-let valorImposto = valorCusto * 0.2;
-let valorCustoTotal = valorCusto + valorImposto;
-let valorLucro = valorVenda - valorCustoTotal;
+// let valorCusto = 23;
+// let valorVenda = 30;
+// let valorImposto = valorCusto * 0.2;
+// let valorCustoTotal = valorCusto + valorImposto;
+// let valorLucro = valorVenda - valorCustoTotal;
 
-let quantidadeVendida = 1000;
+// let quantidadeVendida = 1000;
 
-console.log(`O lucro líquido sobre a venda de ${quantidadeVendida} unidades é de, aproximadamente, R$${Math.round(valorLucro * quantidadeVendida)},00.`);
+// console.log(`O lucro líquido sobre a venda de ${quantidadeVendida} unidades é de, aproximadamente, R$${Math.round(valorLucro * quantidadeVendida)},00.`);
+
+// Exercicio 11:
+
+let salarioBruto = 2612;
+let inss = 0;
+let ir = 0;
+
+if (salarioBruto < 0) {
+  console.log(`Valor de salário bruto digitado (${salarioBruto}) não é válido.`);
+} else {
+    if (salarioBruto >= 0 && salarioBruto <= 1556.94) {
+    inss = salarioBruto * 0.08;
+  } else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+    inss = salarioBruto * 0.09;
+  } else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+    inss = salarioBruto * 0.11;
+  } else {
+    inss = 570.88;
+  }
+}
