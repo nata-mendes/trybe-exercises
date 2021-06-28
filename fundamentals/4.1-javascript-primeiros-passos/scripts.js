@@ -138,3 +138,43 @@
 
 // Exercicio 06:
 
+// let peca = "caminhao";
+
+// switch (peca.toLowerCase()) {
+//   case "rei":
+//     console.log("Pode se mover uma casa por jogada em qualquer uma das direções.");
+//     break;
+
+//   case "dama":
+//     console.log("Pode se mover quantas casas quiser em qualquer uma das direções.");
+//     break;
+
+//   case "rainha":
+//     console.log("Pode se mover quantas casas quiser em qualquer uma das direções.");
+//     break;
+
+//   case "bispo":
+//     console.log("Pode se mover quantas casas quiser, porém, apenas nas diagonais.");
+//     break;
+
+//   case "cavalo":
+//     console.log("Tem o movimento assemelhado à letra L. É a única peça do jogo que pode saltar outras peças.");
+//     break;
+
+//   case "torre":
+//     console.log("Pode se mover quantas casas quiser na horizontal ou vertical.");
+//     break;
+
+//   case "peão":
+//     console.log("Pode se mover apenas uma casa, sempre à frente, por rodada, exceto quando for o primeiro movimento daquela peça no jogo, onde poderá avançar duas casas à frente. Pode capturar outras peças que estejam em sua diagonal a uma casa de distância.");
+//     break;
+
+//   case "peao":
+//     console.log("Pode se mover apenas uma casa, sempre à frente, por rodada, exceto quando for o primeiro movimento daquela peça no jogo, onde poderá avançar duas casas à frente. Pode capturar outras peças que estejam em sua diagonal a uma casa de distância.");
+//     break;
+
+//   default:
+//     console.log("Essa não é uma peça válida.");
+// }
+
+// Exercicio 07:
