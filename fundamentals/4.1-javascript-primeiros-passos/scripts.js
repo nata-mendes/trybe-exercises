@@ -243,21 +243,31 @@
 
 // Exercicio 11:
 
-let salarioBruto = -2612;
+let totalSalary = 2612;
+let statusSalarioBruto;
 let inss = 0;
 let ir = 0;
 
+function verificarSalarioBruto() {
+  if (totalSalary < 0) {
+    statusSalarioBruto = false;
+  } else {
+    statusSalarioBruto = true;
+  }
+}
 
-
-if (salarioBruto < 0) {
-} else {
-    if (salarioBruto >= 0 && salarioBruto <= 1556.94) {
-    inss = salarioBruto * 0.08;
-  } else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
-    inss = salarioBruto * 0.09;
-  } else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
-    inss = salarioBruto * 0.11;
+function calcularInss() {
+  if (totalSalary <= 1556.94) {
+    inss = totalSalary * 0.08;
+  } else if (totalSalary >= 1556.95 && totalSalary <= 2594.92) {
+    inss = totalSalary * 0.09;
+  } else if (totalSalary >= 2594.93 && totalSalary <= 5189.82) {
+    inss = totalSalary * 0.11;
   } else {
     inss = 570.88;
   }
+}
+
+function calcularIr() {
+
 }
