@@ -118,3 +118,13 @@ use('class');
 // );
 
 // db.movies.find({ title: 'Home Alone' });
+
+// exercicio 11:
+
+// db.movies.updateMany(
+//   {},
+//   { $set: { sequels: 0 } }
+// );
+
+// db.movies.find();
+
