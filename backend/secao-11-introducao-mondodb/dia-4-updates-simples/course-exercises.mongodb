@@ -55,9 +55,18 @@ use('class');
 
 // exercicio 4:
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   { $inc: { imdbRating: 2 } },
+// );
+
+// db.movies.find({ title: 'Batman' });
+
+// exercicio 5:
+
 db.movies.updateOne(
-  { title: 'Batman' },
-  { $inc: { imdbRating: 2 } },
+  { title: 'Home Alone' },
+  { $inc: { budget: 5 } },
 );
 
-db.movies.find({ title: 'Batman' });
+db.movies.find({ title: 'Home Alone' });
