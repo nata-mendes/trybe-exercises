@@ -128,3 +128,11 @@ use('class');
 
 // db.movies.find();
 
+// exercicio 12:
+
+db.movies.updateMany(
+  {},
+  { $unset: { estimatedBudget: '', budget: '' } }
+);
+
+db.movies.find();
