@@ -25,9 +25,18 @@ use('class');
 
 // exercicio 1:
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   { $set: { imdbRating: 7.7 } }
+// );
+
+// db.movies.find({ title: 'Batman' });
+
+// exercicio 2:
+
 db.movies.updateOne(
-  { title: 'Batman' },
-  { $set: { imdbRating: 7.7 } }
+  { title: 'Godzilla' },
+  { $set: { budget: 1 } }
 );
 
-db.movies.find({ title: 'Batman' });
+db.movies.find({ title: 'Godzilla' });
