@@ -22,3 +22,12 @@ use('class');
 // ]);
 
 // db.movies.find();
+
+// exercicio 1:
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $set: { imdbRating: 7.7 } }
+);
+
+db.movies.find({ title: 'Batman' });
