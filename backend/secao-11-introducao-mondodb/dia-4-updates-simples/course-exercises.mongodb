@@ -130,9 +130,18 @@ use('class');
 
 // exercicio 12:
 
+// db.movies.updateMany(
+//   {},
+//   { $unset: { estimatedBudget: '', budget: '' } }
+// );
+
+// db.movies.find();
+
+// exercicio 13:
+
 db.movies.updateMany(
-  {},
-  { $unset: { estimatedBudget: '', budget: '' } }
+  { title: { $in: ['Batman', 'Home Alone'] } },
+  { $max: { imdbRating: 17 } }
 );
 
-db.movies.find();
+db.movies.find({ title: { $in: ['Batman', 'Home Alone'] } });
