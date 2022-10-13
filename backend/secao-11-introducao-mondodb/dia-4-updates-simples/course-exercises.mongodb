@@ -34,9 +34,21 @@ use('class');
 
 // exercicio 2:
 
+// db.movies.updateOne(
+//   { title: 'Godzilla' },
+//   { $set: { budget: 1 } }
+// );
+
+// db.movies.find({ title: 'Godzilla' });
+
+// exercicio 3:
+
 db.movies.updateOne(
-  { title: 'Godzilla' },
-  { $set: { budget: 1 } }
+  { title: 'Home Alone' },
+  { $set: {
+    budget: 15,
+    imdbRating: 5.5,
+  }}
 );
 
-db.movies.find({ title: 'Godzilla' });
+db.movies.find({ title: 'Home Alone' });
