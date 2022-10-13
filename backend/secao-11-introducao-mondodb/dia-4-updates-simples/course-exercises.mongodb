@@ -100,12 +100,21 @@ use('class');
 
 // exercicio 9:
 
-db.movies.updateOne(
-  { title: 'Godzilla' },
-  {
-    $max: { imdbRating: 8.6 },
-    $set: { "category.1": "thriller" },
-  }
-);
+// db.movies.updateOne(
+//   { title: 'Godzilla' },
+//   {
+//     $max: { imdbRating: 8.6 },
+//     $set: { "category.1": "thriller" },
+//   }
+// );
 
-db.movies.find({ title: 'Godzilla' });
+// db.movies.find({ title: 'Godzilla' });
+
+// exercicio 10:
+
+// db.movies.updateOne(
+//   { title: 'Home Alone' },
+//   { $currentDate: { lastUpdated: { $type: 'timestamp' } } }
+// );
+
+// db.movies.find({ title: 'Home Alone' });
