@@ -72,13 +72,29 @@ use('cinema');
 // );
 
 // segunda tentativa:
-db.movies.updateOne(
-  { title: 'Batman' },
-  {
-    $pull: {
-      category: { $eq: 'action' },
-    },
-  },
-);
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $pull: {
+//       category: { $eq: 'action' },
+//     },
+//   },
+// );
 
-db.movies.find({ title: 'Batman' });
+// db.movies.find({ title: 'Batman' });
+
+// exercicio 4:
+
+// enunciado:
+// Remova o primeiro elemento do array category do filme Batman
+
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $pop: {
+//       category: -1
+//     },
+//   },
+// );
+
+// db.movies.find({ title: 'Batman' });
