@@ -98,3 +98,19 @@ use('cinema');
 // );
 
 // db.movies.find({ title: 'Batman' });
+
+// exercicio 5:
+
+// enunciado:
+// Remova o último elemento do array category do filme Batman
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $pop: {
+      category: 1
+    },
+  },
+);
+
+db.movies.find({ title: 'Batman' });
