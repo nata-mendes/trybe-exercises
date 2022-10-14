@@ -36,9 +36,24 @@ use('cinema');
 
 // exercicio 1:
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   { $push: { category: 'superhero' } }
+// );
+
+// db.movies.find({ title: 'Batman' });
+
+// exercicio 2:
+
 db.movies.updateOne(
   { title: 'Batman' },
-  { $push: { category: 'superhero' } }
+  {
+    $push: {
+      category: {
+        $each: ['villain', 'comic-based'],
+      },
+    },
+  },
 );
 
 db.movies.find({ title: 'Batman' });
