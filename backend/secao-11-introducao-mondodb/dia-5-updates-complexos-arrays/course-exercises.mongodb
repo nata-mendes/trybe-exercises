@@ -45,13 +45,38 @@ use('cinema');
 
 // exercicio 2:
 
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $push: {
+//       category: {
+//         $each: ['villain', 'comic-based'],
+//       },
+//     },
+//   },
+// );
+
+// db.movies.find({ title: 'Batman' });
+
+// exercicio 3:
+
+// primeira tentativa (falha)
+// db.movies.updateOne(
+//   { title: 'Batman' },
+//   {
+//     $unset: {
+//       'category.$[action]': '',
+//     },
+//   },
+//   { arrayFilters: [ { 'action': 'action' } ] },
+// );
+
+// segunda tentativa:
 db.movies.updateOne(
   { title: 'Batman' },
   {
-    $push: {
-      category: {
-        $each: ['villain', 'comic-based'],
-      },
+    $pull: {
+      category: { $eq: 'action' },
     },
   },
 );
