@@ -1,147 +1,147 @@
-// setup inicial
+// // setup inicial
 
-use('class');
+// use('class');
 
-// db.movies.insertMany([
-//   {
-//     "title": "Batman",
-//     "category": [ "action", "adventure" ],
-//     "imdbRating": 7.6,
-//     "budget": 35
-//   },
-//   {
-//     "title": "Godzilla",
-//     "category": [ "action", "adventure", "sci-fi" ],
-//     "imdbRating": 6.6
-//   },
-//   {
-//     "title": "Home Alone",
-//     "category": [ "family", "comedy" ],
-//     "imdbRating": 7.4
-//   }
-// ]);
+// // db.movies.insertMany([
+// //   {
+// //     "title": "Batman",
+// //     "category": [ "action", "adventure" ],
+// //     "imdbRating": 7.6,
+// //     "budget": 35
+// //   },
+// //   {
+// //     "title": "Godzilla",
+// //     "category": [ "action", "adventure", "sci-fi" ],
+// //     "imdbRating": 6.6
+// //   },
+// //   {
+// //     "title": "Home Alone",
+// //     "category": [ "family", "comedy" ],
+// //     "imdbRating": 7.4
+// //   }
+// // ]);
 
-// db.movies.find();
+// // db.movies.find();
 
-// exercicio 1:
+// // exercicio 1:
 
-// db.movies.updateOne(
-//   { title: 'Batman' },
-//   { $set: { imdbRating: 7.7 } }
-// );
+// // db.movies.updateOne(
+// //   { title: 'Batman' },
+// //   { $set: { imdbRating: 7.7 } }
+// // );
 
-// db.movies.find({ title: 'Batman' });
+// // db.movies.find({ title: 'Batman' });
 
-// exercicio 2:
+// // exercicio 2:
 
-// db.movies.updateOne(
-//   { title: 'Godzilla' },
-//   { $set: { budget: 1 } }
-// );
+// // db.movies.updateOne(
+// //   { title: 'Godzilla' },
+// //   { $set: { budget: 1 } }
+// // );
 
-// db.movies.find({ title: 'Godzilla' });
+// // db.movies.find({ title: 'Godzilla' });
 
-// exercicio 3:
+// // exercicio 3:
 
-// db.movies.updateOne(
-//   { title: 'Home Alone' },
-//   { $set: {
-//     budget: 15,
-//     imdbRating: 5.5,
-//   }}
-// );
+// // db.movies.updateOne(
+// //   { title: 'Home Alone' },
+// //   { $set: {
+// //     budget: 15,
+// //     imdbRating: 5.5,
+// //   }}
+// // );
 
-// db.movies.find({ title: 'Home Alone' });
+// // db.movies.find({ title: 'Home Alone' });
 
-// exercicio 4:
+// // exercicio 4:
 
-// db.movies.updateOne(
-//   { title: 'Batman' },
-//   { $inc: { imdbRating: 2 } },
-// );
+// // db.movies.updateOne(
+// //   { title: 'Batman' },
+// //   { $inc: { imdbRating: 2 } },
+// // );
 
-// db.movies.find({ title: 'Batman' });
+// // db.movies.find({ title: 'Batman' });
 
-// exercicio 5:
+// // exercicio 5:
 
-// db.movies.updateOne(
-//   { title: 'Home Alone' },
-//   { $inc: { budget: 5 } },
-// );
+// // db.movies.updateOne(
+// //   { title: 'Home Alone' },
+// //   { $inc: { budget: 5 } },
+// // );
 
-// db.movies.find({ title: 'Home Alone' });
+// // db.movies.find({ title: 'Home Alone' });
 
-// exercicio 6:
+// // exercicio 6:
 
-// db.movies.updateOne(
-//   { title: 'Batman' },
-//   { $mul: { imdbRating: 4 } },
-// );
+// // db.movies.updateOne(
+// //   { title: 'Batman' },
+// //   { $mul: { imdbRating: 4 } },
+// // );
 
-// db.movies.find({ title: 'Batman' });
+// // db.movies.find({ title: 'Batman' });
 
-// exercicio 7:
+// // exercicio 7:
 
-// db.movies.updateOne(
-//   { title: 'Batman' },
-//   { $rename: { budget: 'estimatedBudget' } }
-// );
+// // db.movies.updateOne(
+// //   { title: 'Batman' },
+// //   { $rename: { budget: 'estimatedBudget' } }
+// // );
 
-// db.movies.find({ title: 'Batman' });
+// // db.movies.find({ title: 'Batman' });
 
-// exercicio 8:
+// // exercicio 8:
 
-// db.movies.updateOne(
-//   { title: 'Home Alone' },
-//   { $min: { budget: 5 } }
-// )
+// // db.movies.updateOne(
+// //   { title: 'Home Alone' },
+// //   { $min: { budget: 5 } }
+// // )
 
-// db.movies.find({ title: 'Home Alone' });
+// // db.movies.find({ title: 'Home Alone' });
 
-// exercicio 9:
+// // exercicio 9:
 
-// db.movies.updateOne(
-//   { title: 'Godzilla' },
-//   {
-//     $max: { imdbRating: 8.6 },
-//     $set: { "category.1": "thriller" },
-//   }
-// );
+// // db.movies.updateOne(
+// //   { title: 'Godzilla' },
+// //   {
+// //     $max: { imdbRating: 8.6 },
+// //     $set: { "category.1": "thriller" },
+// //   }
+// // );
 
-// db.movies.find({ title: 'Godzilla' });
+// // db.movies.find({ title: 'Godzilla' });
 
-// exercicio 10:
+// // exercicio 10:
 
-// db.movies.updateOne(
-//   { title: 'Home Alone' },
-//   { $currentDate: { lastUpdated: { $type: 'timestamp' } } }
-// );
+// // db.movies.updateOne(
+// //   { title: 'Home Alone' },
+// //   { $currentDate: { lastUpdated: { $type: 'timestamp' } } }
+// // );
 
-// db.movies.find({ title: 'Home Alone' });
+// // db.movies.find({ title: 'Home Alone' });
 
-// exercicio 11:
+// // exercicio 11:
+
+// // db.movies.updateMany(
+// //   {},
+// //   { $set: { sequels: 0 } }
+// // );
+
+// // db.movies.find();
+
+// // exercicio 12:
+
+// // db.movies.updateMany(
+// //   {},
+// //   { $unset: { estimatedBudget: '', budget: '' } }
+// // );
+
+// // db.movies.find();
+
+// // exercicio 13:
 
 // db.movies.updateMany(
-//   {},
-//   { $set: { sequels: 0 } }
+//   { title: { $in: ['Batman', 'Home Alone'] } },
+//   { $max: { imdbRating: 17 } }
 // );
 
-// db.movies.find();
-
-// exercicio 12:
-
-// db.movies.updateMany(
-//   {},
-//   { $unset: { estimatedBudget: '', budget: '' } }
-// );
-
-// db.movies.find();
-
-// exercicio 13:
-
-db.movies.updateMany(
-  { title: { $in: ['Batman', 'Home Alone'] } },
-  { $max: { imdbRating: 17 } }
-);
-
-db.movies.find({ title: { $in: ['Batman', 'Home Alone'] } });
+// db.movies.find({ title: { $in: ['Batman', 'Home Alone'] } });
